@@ -1,0 +1,5 @@
+mixin main-menu(links)
+	nav.main-menu
+		.layer
+			each link in links
+				a.main-menu__item(href=link.href)=link.title

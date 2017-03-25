@@ -1,0 +1,8 @@
+mixin bread-crumbs(links)
+	nav.bread-crumbs
+		.layer
+			each link in links
+				if link.active
+					span.bread-crumbs__item.bread-crumbs__item_active=link.title
+				else
+					a.bread-crumbs__item(href=link.href)=link.title

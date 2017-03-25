@@ -1,22 +1,28 @@
-// Common styles of the project
-
-html, body {
-    height: 100%;
+BODY, HTML{
+	padding: 0;
+	margin: 0;
 }
 
-.page {
-    
+BODY{
+	display: block;
+	margin: auto;
+	font-family: "PT Sans", Arial, sans-serif;
+	text-align: center;
+	font-size: 62.5%;	
+	min-width: 24em;
+	max-width: 192em; // 192em
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
-.page__wrapper {
-    min-height: 100%;
-    margin-bottom: -50px;
+.main{
+	flex:1;
 }
 
-* html .page__wrapper {
-    height: 100%;
-}
-
-.page__buffer {
-    height: 50px;
+.layer{
+	text-align: left;
+	width: 100%;
+	max-width: 94.6em;
+	margin:auto;
 }
