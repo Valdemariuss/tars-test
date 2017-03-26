@@ -1,3 +1,16 @@
+mixin footer-menu(links)
+	nav.footer-menu
+		each link in links
+			if link.active
+				span.footer-menu__item.footer-menu__item_active=link.title
+			else
+				a.footer-menu__item(href=link.href)=link.title
+
 mixin footer(data)
 	footer.footer
-		h2 Im footer
+		.layer.footer__layer
+			.footer__info
+				.footer__copyright=data.copyRight 
+				a.footer__email(href="mailto:" + data.email)=data.email
+			.footer__menu
+				+footer-menu(data.links)

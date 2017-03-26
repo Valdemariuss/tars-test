@@ -6,7 +6,7 @@ BODY, HTML{
 BODY{
 	display: block;
 	margin: auto;
-	font-family: "PT Sans", Arial, sans-serif;
+	font-family: $PTSans;
 	text-align: center;
 	font-size: 62.5%;	
 	min-width: 24em;
@@ -18,6 +18,7 @@ BODY{
 
 .main{
 	flex:1;
+	-ms-flex:none;
 }
 
 .layer{
@@ -34,12 +35,44 @@ BODY{
 	&__aside, &__content{
 		display: table-cell;
 		padding: 1em;
+		padding-bottom:20em;
+		vertical-align: top;
+		// outline: 1px solid #ccc;
+		// overflow: hidden;
 	}
 	&__aside{
-		width: 30%;
+		width: 21%;
 		padding-left:0;
 	}
 	&__content{
+		padding-left:0;
 		padding-right:0;
+		// outline: 1px solid blue;
 	}		
+}
+
+.main-text{
+	display:block;
+	width: 100%;
+	font-size:0;
+	margin-top: 20px;
+	border-top: 1px solid #000;
+	padding-bottom: 5em;
+	&__item{
+		display: inline-block;
+		padding: 1.7em 1.4em;
+		text-align: left;
+		color: #767676;
+		font-size: 14px;
+		width: 50%;
+		box-sizing: border-box;
+		margin: 0;
+		vertical-align:top;
+		&:nth-child(odd){
+			padding-left:0;
+		}
+		&:nth-child(even){
+			padding-right:0;
+		}		
+	}
 }

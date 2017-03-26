@@ -16,4 +16,6 @@ mixin catalog-menu(data)
 									else
 										a.catalog-menu__sub-link(href=subItem.href)=subItem.title
 		.cat-price
-			a.cat-price__link(href=data.price.href)=data.price.title
+			a.cat-price__link(href=data.price.href) 
+				span.cat-price__pic
+				strong.cat-price__title=data.price.title

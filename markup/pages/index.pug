@@ -2,11 +2,11 @@ doctype html
 html(class="no-js", lang="ru")
 
     include ../components/head/head.pug
-    include ../components/header/header.pug
-    include ../components/main-menu/main-menu.pug
+    include ../components/header/header.pug    
     include ../components/slider/slider.pug
     include ../components/bread-crumbs/bread-crumbs.pug
     include ../components/catalog-menu/catalog-menu.pug
+    include ../components/catalog-items/catalog-items.pug
     include ../components/footer/footer.pug
 
     head
@@ -16,16 +16,19 @@ html(class="no-js", lang="ru")
         |%=symbols=%
 
         +header(headerData)
-        +main-menu(mainLinks)
-        +slider(sliderData)
-        section.main
-            +bread-crumbs(breatCrumbsLinks)
-            .layer.catalog
-                aside.catalog__aside
-                   +catalog-menu(catalogMenu) 
-                .catalog__content
-                    //- catalog-items()
-        +footer()
+        .content            
+            +slider(sliderData)
+            section
+                +bread-crumbs(breatCrumbsLinks)
+                .layer.catalog
+                    aside.catalog__aside
+                       +catalog-menu(catalogMenu) 
+                    .catalog__content
+                        +catalog-items(catalogItemsData)
+                        .main-text
+                            p.main-text__item Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке более чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент наш коллектив состоит из более чем 30 сотрудников работающих в двух офисах в Москве и Зеленограде.характерные для этого жанра мотивы: неразделённой любви, ухода молодости, угасания души. 
+                            p.main-text__item Одним из основных направлений работ нашей компании является поисковое продвижение сайтов, на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым запросам. При этом в работе основной акцент мы делаем на качестве работ, а так же применяем собственные уникальные разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек под руководством ведущего специалиста, преимущественно работающих в нашем московском офисе.                                              
+        +footer(footerData)
 
         script(src='%=static=%js/separate-js/svg4everybody.min.js')
         script svg4everybody();

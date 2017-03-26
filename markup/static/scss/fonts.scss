@@ -28,6 +28,8 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
 	font-style: normal;
 }
 
+$PTSans: "PT Sans", Arial, sans-serif;
+
 @font-face {
 	font-family: 'PT Sans';
 	src: url('../fonts/PTSans-Bold.eot');
@@ -49,3 +51,5 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	font-style: normal;
 }
+
+$OpenSansCondensed: "Open Sans Condensed", Arial, sans-serif;

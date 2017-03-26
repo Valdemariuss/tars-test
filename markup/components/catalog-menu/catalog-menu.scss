@@ -12,7 +12,7 @@
 	}
 	&__link{
 		color: #767676;
-		font-family: "PT Sans", Arial, sans-serif;
+		font-family: $PTSans;
 		font-size: 1.8em;
 		text-decoration: none;
 		&_active, &:hover{
@@ -35,7 +35,7 @@
 	}
 	&__sub-link{
 		color: #767676;
-		font-family: "PT Sans", Arial, sans-serif;
+		font-family: $PTSans;
 		font-size: 1.4em;
 		text-decoration: none;
 		&_active, &:hover{
@@ -49,22 +49,30 @@
 	display: block;
 	padding: 5em 0 2em 0;
 	text-align: center;
-
+	&__title, &__pic{
+		display:block;
+		text-decoration: none; 
+	}
+	&__pic{
+		display: inline-block;
+		margin: auto;
+		@include bg($ms-exel);
+	}
 	&__link{
 		display: inline-block;
 		text-decoration: none;
-		font-family: "PT Sans", Arial, sans-serif;
-		font-weight: bold;
-		font-size: 3em;
-		color: #444;
-		background-image: url("/static/img/content/ms-exel.png");
-		background-position: top center;
-		background-repeat: no-repeat;
 		text-align: center;
-		margin: auto;
-		padding: 3.5em 0 0 0;
-		&:hover{
+		margin: auto;		
+		&:hover .cat-price__title{
 			text-decoration: underline;
 		}	
 	}
+	&__title{
+		display:block;
+		text-decoration: none;
+		font-family: $PTSans;
+		font-weight: bold;
+		font-size: 3em;
+		color: #444;		 
+	}	
 }

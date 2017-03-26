@@ -1,0 +1,21 @@
+mixin paginator(pages)
+	nav.paginator
+		each page in pages
+			if page.active
+				span.paginator__item.paginator__item_active=page.title
+			else
+				a.paginator__item(href=page.href)=page.title
+
+mixin catalog-items(data)
+	.catalog-items
+		each product in data.goods
+			.catalog-items__item
+				.catalog-items__item-box
+					img.catalog-items__img(src=product.img alt=product.title)
+					h3.catalog-items__title=product.title
+					.catalog-items__bay
+						.catalog-items__bay-left
+							strong.catalog-items__price=product.price
+						.catalog-items__bay-right
+							a.catalog-items__cart(href=product.href)
+	+paginator(data.pages)

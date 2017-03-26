@@ -1,11 +1,14 @@
+include ../main-menu/main-menu.pug
 mixin header(data)
 	header.header
 		.layer.header__tb
 			.header__cell.header__left
 				a(href=data.logo.href).logo
-					img(alt=data.logo.alt, src=data.logo.src).logo__img
+					//- img(alt=data.logo.alt, src=data.logo.src).logo__img
+					span.logo__img
 			.header__cell.header__right
 				.contacts
 					each phone in data.phones					
 						a(href=phone.href title=phone.title).contacts__phone=phone.text
 					a(href=data.feedback.href).contacts__feedback=data.feedback.text
+		+main-menu(mainLinks)

@@ -18,6 +18,14 @@
 	}	
 }
 
+.logo{
+	display: inline-block;
+	&__img{
+		display: inline-block;
+		@include bg($logo);
+	}
+}
+
 .contacts{
 	display: inline-block;
 	&__phone,
@@ -30,7 +38,7 @@
 		color: #000;
 	}
 	&__phone{
-		font-family: "Open Sans Condensed", Arial, sans-serif;
+		font-family: $OpenSansCondensed;		
 		font-size: 4em;
 		line-height: 1.1;
 	}
@@ -39,7 +47,7 @@
 		position: relative;
 		z-index: 0;
 		font-size: 2.4em;
-		font-family: "PT Sans", Arial, sans-serif;
+		font-family: $PTSans;
 		font-weight: bold;
 		&:after{
 			display: block;
