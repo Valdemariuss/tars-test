@@ -4,31 +4,31 @@ catalogItemsData: {
             img: '/static/img/content/product-no-fhoto.jpg',
             title: 'Самый клевый чайник, который надо купить!',
             href: 'javascript:void(0);',
-            price: '1900 р.'
+            price: '1 900 р.'
         },
         {
             img: '/static/img/content/product-no-fhoto.jpg',
             title: 'Самый клевый чайник, который надо купить!',
             href: 'javascript:void(0);',
-            price: '1900 р.'
+            price: '1 900 р.'
         },
         {
             img: '/static/img/content/product-no-fhoto.jpg',
             title: 'Самый клевый чайник, который надо купить!',
             href: 'javascript:void(0);',
-            price: '1900 р.'
+            price: '1 900 р.'
         },
         {
             img: '/static/img/content/product-no-fhoto.jpg',
             title: 'Самый клевый чайник, который надо купить!',
             href: 'javascript:void(0);',
-            price: '1900 р.'
+            price: '1 900 р.'
         },
         {
             img: '/static/img/content/product-no-fhoto.jpg',
             title: 'Самый клевый чайник, который надо купить!',
             href: 'javascript:void(0);',
-            price: '1900 р.'
+            price: '1 900 р.'
         }    
     ],
     pages:[

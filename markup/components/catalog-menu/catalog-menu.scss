@@ -1,13 +1,15 @@
 .catalog-menu{
 	display: block;
-	padding: 0 0 1em 0;
+	padding: 0 0 5.2em 0;
+	margin: 0;
 	list-style: none;
 	LI{
 		display: block;
 	}
 	&__item{
 		display: block;
-		padding: .4em 1em .4em 0;
+		padding: .3em 1em .28em 0;
+		letter-spacing: .05em;
 		list-style: none;
 	}
 	&__link{
@@ -25,7 +27,8 @@
 		list-style: none;
 	}
 	&__sub-item{
-		padding: .2em .5em .2em 1.5em;
+		padding: .2em .5em .18em 1em;
+		letter-spacing: .01em;
 		&:before{
 			content: "•";
 			color: #767676;
@@ -73,6 +76,10 @@
 		font-family: $PTSans;
 		font-weight: bold;
 		font-size: 3em;
-		color: #444;		 
+		color: #444;
+		position: relative;
+		z-index: 0;
+		bottom: .3em;
+		letter-spacing: .025em;		 
 	}	
 }

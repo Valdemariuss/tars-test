@@ -8,6 +8,7 @@
 		margin-bottom:1em;
 		vertical-align: top;
 		position: relative;
+		padding-bottom: 1em;
 		// outline: 1px solid #ccc;	
 		&:nth-child(3n-1){
 			left: 2%;
@@ -21,7 +22,7 @@
 			display: block;
 			background-color: #dcdcdc;
 			color: #767676;			
-			padding: 1.5em;			
+			padding: 1.9em 1.9em 1.4em 1.9em;			
 		}				
 	}
 	&__img{
@@ -29,7 +30,7 @@
 	}
 	&__title{
 		display: block;
-		padding: 1em 0;
+		padding: .8em 0 1em 0;
 		margin: 0;
 		font-weight: normal;
 		line-height: 1;
@@ -43,6 +44,7 @@
 		&-left, &-right{
 			display: table-cell;
 			vertical-align: middle;
+			padding: 3em 0 0 0;
 		}
 		&-left{
 			text-align: left;
@@ -56,19 +58,23 @@
 		padding: 0;
 		font-family: $PTSans;
 		font-size: 2.8em;
-		color: #444;		
+		color: #444;
+		word-spacing: 0.1em;		
 	}
 	&__cart{
 		display: inline-block;
 		@include bg($add-basket);
-		margin-right: 1em;		
+		margin-right: 1.7em;
+		margin-bottom: -0.8em;
+		position:relative;
+		z-index: 0;		
 	}
 }
 
 .paginator{
 	display: block;
 	text-align: center;
-	padding: 1em 0;
+	padding: 0 0 1em 0;
 
 	&__item{
 		display: inline-block;
@@ -76,7 +82,7 @@
 		font-size: 1.4em;
 		color: #767676;
 		text-decoration: none;
-		padding: 8px 13px;
+		padding: .54em .7em;
 
 		&_active, &:hover{
 			color: #444;

@@ -1,6 +1,6 @@
 .footer{
 	display: block;
-	padding: 4em 0;
+	padding: 4.3em 0 4.4em 0;
 	text-align: left;
 	background-color: #777;
 	&__info, &__menu{
@@ -10,7 +10,7 @@
 		vertical-align: top;
 	}
 	&__info{
-		width: 40%;
+		width: 35.5%;
 	}	
 	&__copyright, &__email{
 		font-family: $PTSans;
@@ -22,11 +22,14 @@
 }
 .footer-menu{
 	display: block;
+	position:relative;
+	z-index: 0;
+	bottom: .2em;
 	&__item{
 		display: block;
 		font-family: $PTSans;
 		font-size: 1.4em;
-		line-height: 1.7;
+		line-height: 1.86;
 		color: #fff;		
 		text-decoration: underline;
 		&_active, &:hover{
