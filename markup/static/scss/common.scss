@@ -26,3 +26,20 @@ BODY{
 	max-width: 94.6em;
 	margin:auto;
 }
+
+.catalog{
+	display: table;
+	text-align: left;
+
+	&__aside, &__content{
+		display: table-cell;
+		padding: 1em;
+	}
+	&__aside{
+		width: 30%;
+		padding-left:0;
+	}
+	&__content{
+		padding-right:0;
+	}		
+}

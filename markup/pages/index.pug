@@ -6,6 +6,7 @@ html(class="no-js", lang="ru")
     include ../components/main-menu/main-menu.pug
     include ../components/slider/slider.pug
     include ../components/bread-crumbs/bread-crumbs.pug
+    include ../components/catalog-menu/catalog-menu.pug
     include ../components/footer/footer.pug
 
     head
@@ -16,12 +17,12 @@ html(class="no-js", lang="ru")
 
         +header(headerData)
         +main-menu(mainLinks)
-        +slider(mainLinks)
-        +bread-crumbs(breatCrumbsLinks)
-        main.main
-            section.catalog
+        +slider(sliderData)
+        section.main
+            +bread-crumbs(breatCrumbsLinks)
+            .layer.catalog
                 aside.catalog__aside
-                   //- catalog-menu() 
+                   +catalog-menu(catalogMenu) 
                 .catalog__content
                     //- catalog-items()
         +footer()

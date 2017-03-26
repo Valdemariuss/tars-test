@@ -464,7 +464,7 @@
 // responsive: true, // Подстраиваться по размеры экрана
 // autoPlay: true, // автоматическое перелистывание изображений
 // pauseOnHover: true, // Останавливать перелистывание при наведении на слайдер(если autoPlay === true)
-$('.slider-container').ikSlider({
+$('.slider__container').ikSlider({
   speed: 500,
   autoPlay: true,
   controls: false,

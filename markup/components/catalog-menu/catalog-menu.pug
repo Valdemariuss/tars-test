@@ -1,0 +1,19 @@
+mixin catalog-menu(data)
+	nav
+		ul.catalog-menu
+			each item in data.links
+				li.catalog-menu__item
+					if item.active
+						span.catalog-menu__link.catalog-menu__link_active=item.title
+					else
+						a.catalog-menu__link(href=item.href)=item.title
+					if item.links
+						ul.catalog-menu__sub-menu
+							each subItem in item.links
+								li.catalog-menu__sub-item
+									if subItem.active
+										span.catalog-menu__sub-link.catalog-menu__sub-link_active=subItem.title
+									else
+										a.catalog-menu__sub-link(href=subItem.href)=subItem.title
+		.cat-price
+			a.cat-price__link(href=data.price.href)=data.price.title
